@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ons melkveebedrijf</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ons melkveebedrijf" />
+    <meta name="author" content="G.Dekker" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="center-text">Welkom op ons melkveebedrijf</h1>
+      <nav class="nav-top">
+        <a href="index.html">Ons melkveebedrijf</a>
+        <a href="melkkoeien.html">Van kalf tot melkkoe</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="foto-flex-column">
+        <img src="./images/koeien_grazen.jpg" alt="Koeien_grazen" />
+      </div>
+    </header>
+
+    <main class="contact">
+      <form name="contact" method="POST" data-netlify="true" class="form">
+        <!--formulier werkt in netlify, gecontroleerd d.m.v. data-nelify -->
+
+        <br />
+        <h1>Contactformulier</h1>
+        <br />
+        <h2>Uw gegevens</h2>
+        <p>
+          <label>Naam:</label>
+          <br />
+          <input type="text" name="naam" required />
+        </p>
+        <p>
+          <label>Straat en huisnummer:</label>
+          <br />
+          <input type="text" name="naam" required />
+        </p>
+        <p>
+          <label>Plaatsnaam</label>
+          <br />
+          <input type="text" name="naam" required />
+        </p>
+        <p>
+          <label>Email:</label>
+          <br />
+          <input type="email" name="email" />
+        </p>
+        <p>
+          <label>Tel.:</label>
+          <br />
+          <input type="tel" name="telefoon" />
+        </p>
+        <p>
+          <label>Geboortedatum:</label>
+          <br />
+          <input type="date" name="geboortedatum" min="1900-01-01" />
+        </p>
+
+        <hr />
+
+        <p>
+          Wilt u meer informatie, langskomen of beide? <br />
+          <input type="radio" name="informatie" value="informatie" />
+          <label>informatie</label> <br />
+
+          <input type="radio" name="informatie" value="langskomen" />
+          <label>langskomen</label> <br />
+
+          <input type="radio" name="informatie" value="beide" />
+          <label>beide</label>
+        </p>
+
+        <hr />
+
+        <p>
+          Waarover wilt u graag meer informatie?<br />
+          <label>
+            <textarea name="biografie"></textarea>
+          </label>
+        </p>
+
+        <hr />
+
+        <p>
+          Indien u wilt langskomen, waarin liggen uw interesses?<br />
+          (U kunt meerdere vakjes aanvinken)<br />
+          <input type="checkbox" name="koeien" />
+          <label>koeien</label>
+          <br />
+
+          <input type="checkbox" name="pinken en vaarzen" />
+          <label>pinken en vaarzen</label>
+          <br />
+
+          <input type="checkbox" name="kalfjes" />
+          <label>kalfjes</label>
+          <br />
+
+          <input type="checkbox" name="melkrobot" />
+          <label>melkrobot</label>
+          <br />
+
+          <input type="checkbox" name="tractoren en machines" />
+          <label>tractoren en machines</label>
+          <br />
+        </p>
+
+        <hr />
+
+        <p>
+          <button type="reset">Reset</button>
+          <button type="submit">Verzenden</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
